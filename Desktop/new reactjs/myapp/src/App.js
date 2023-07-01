@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <Navbar expand="lg" className="bg-body-tertiary">
-          <Container>
+          <Container className='main_section'>
           <Navbar.Brand href="#home">Docplanner Group</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -23,14 +23,14 @@ function App() {
             </Navbar.Collapse>
           </Container>
       </Navbar>
-      <div>
+      <div className='main_section'>
         <h1>Making the healthcare experience more human</h1>
       </div>
-      <div className='flex_2'>
+      <div className='flex_2 main_section'>
         <Card style={{ width: '18rem' }}>
           <Card.Body className='patients'>
             <Card.Title>For patients</Card.Title>
-            <Card.Subtitle className="mb-2 color" id='color'>Find a doctor, book a visit and solve any health-related doubt</Card.Subtitle>
+            <Card.Subtitle className="mb-2 color">Find a doctor, book a visit and solve any health-related doubt</Card.Subtitle>
               <div className="box_style">
                 <select>
                   <option>Choose country</option>
@@ -53,7 +53,7 @@ function App() {
         <Card style={{ width: '18rem' }}>
           <Card.Body className='doctors'>
             <Card.Title>For doctors</Card.Title>
-            <Card.Subtitle className="mb-2 color" id='color'>Save time managing visits and cut no-shows by half</Card.Subtitle>
+            <Card.Subtitle className="mb-2 color">Save time managing visits and cut no-shows by half</Card.Subtitle>
               <div className="box_style">
                 <select>
                   <option>2 to 20 specialists</option>
@@ -71,7 +71,7 @@ function App() {
         <Card style={{ width: '18rem' }}>
           <Card.Body className='clinics'>
             <Card.Title>For clinics</Card.Title>
-            <Card.Subtitle className="mb-2 color" id='color'>Deliver an exceptional patient experience in your clinic</Card.Subtitle>
+            <Card.Subtitle className="mb-2 color">Deliver an exceptional patient experience in your clinic</Card.Subtitle>
             <div className="box_style">
               <select>
                 <option>2 to 20 specialists</option>
